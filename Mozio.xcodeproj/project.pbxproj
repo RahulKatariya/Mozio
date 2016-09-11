@@ -8,24 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		352226BE1D851CB700BE91E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352226BD1D851CB700BE91E5 /* AppDelegate.swift */; };
-		352226C01D851CB700BE91E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352226BF1D851CB700BE91E5 /* ViewController.swift */; };
-		352226C31D851CB700BE91E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 352226C11D851CB700BE91E5 /* Main.storyboard */; };
-		352226C51D851CB700BE91E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 352226C41D851CB700BE91E5 /* Assets.xcassets */; };
-		352226C81D851CB700BE91E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 352226C61D851CB700BE91E5 /* LaunchScreen.storyboard */; };
+		355A1DA51D85251A00A2DB27 /* MozioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355A1DA41D85251A00A2DB27 /* MozioTests.swift */; };
+		35E14B881D8523DB0052CCA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35E14B821D8523DB0052CCA1 /* Assets.xcassets */; };
+		35E14B891D8523DB0052CCA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35E14B831D8523DB0052CCA1 /* LaunchScreen.storyboard */; };
+		35E14B8A1D8523DB0052CCA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35E14B851D8523DB0052CCA1 /* Main.storyboard */; };
+		35E14B8B1D8523DB0052CCA1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35E14B871D8523DB0052CCA1 /* Info.plist */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		355A1DA71D85251A00A2DB27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 352226B21D851CB700BE91E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 352226B91D851CB700BE91E5;
+			remoteInfo = Mozio;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		352226BA1D851CB700BE91E5 /* Mozio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mozio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		352226BD1D851CB700BE91E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		352226BF1D851CB700BE91E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		352226C21D851CB700BE91E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		352226C41D851CB700BE91E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		352226C71D851CB700BE91E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		352226C91D851CB700BE91E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		355A1DA21D85251A00A2DB27 /* MozioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MozioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		355A1DA41D85251A00A2DB27 /* MozioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MozioTests.swift; sourceTree = "<group>"; };
+		355A1DA61D85251A00A2DB27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35E14B821D8523DB0052CCA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35E14B841D8523DB0052CCA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		35E14B861D8523DB0052CCA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		35E14B871D8523DB0052CCA1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		352226B71D851CB700BE91E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		355A1D9F1D85251A00A2DB27 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				352226BC1D851CB700BE91E5 /* Mozio */,
+				355A1DA31D85251A00A2DB27 /* MozioTests */,
 				352226BB1D851CB700BE91E5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				352226BA1D851CB700BE91E5 /* Mozio.app */,
+				355A1DA21D85251A00A2DB27 /* MozioTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,13 +77,29 @@
 			isa = PBXGroup;
 			children = (
 				352226BD1D851CB700BE91E5 /* AppDelegate.swift */,
-				352226BF1D851CB700BE91E5 /* ViewController.swift */,
-				352226C11D851CB700BE91E5 /* Main.storyboard */,
-				352226C41D851CB700BE91E5 /* Assets.xcassets */,
-				352226C61D851CB700BE91E5 /* LaunchScreen.storyboard */,
-				352226C91D851CB700BE91E5 /* Info.plist */,
+				35E14B851D8523DB0052CCA1 /* Main.storyboard */,
+				35E14B811D8523DB0052CCA1 /* Supporting Files */,
 			);
 			path = Mozio;
+			sourceTree = "<group>";
+		};
+		355A1DA31D85251A00A2DB27 /* MozioTests */ = {
+			isa = PBXGroup;
+			children = (
+				355A1DA41D85251A00A2DB27 /* MozioTests.swift */,
+				355A1DA61D85251A00A2DB27 /* Info.plist */,
+			);
+			path = MozioTests;
+			sourceTree = "<group>";
+		};
+		35E14B811D8523DB0052CCA1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35E14B821D8523DB0052CCA1 /* Assets.xcassets */,
+				35E14B831D8523DB0052CCA1 /* LaunchScreen.storyboard */,
+				35E14B871D8523DB0052CCA1 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +122,24 @@
 			productReference = 352226BA1D851CB700BE91E5 /* Mozio.app */;
 			productType = "com.apple.product-type.application";
 		};
+		355A1DA11D85251A00A2DB27 /* MozioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 355A1DAB1D85251A00A2DB27 /* Build configuration list for PBXNativeTarget "MozioTests" */;
+			buildPhases = (
+				355A1D9E1D85251A00A2DB27 /* Sources */,
+				355A1D9F1D85251A00A2DB27 /* Frameworks */,
+				355A1DA01D85251A00A2DB27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				355A1DA81D85251A00A2DB27 /* PBXTargetDependency */,
+			);
+			name = MozioTests;
+			productName = MozioTests;
+			productReference = 355A1DA21D85251A00A2DB27 /* MozioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +152,10 @@
 				TargetAttributes = {
 					352226B91D851CB700BE91E5 = {
 						CreatedOnToolsVersion = 7.3.1;
+					};
+					355A1DA11D85251A00A2DB27 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 352226B91D851CB700BE91E5;
 					};
 				};
 			};
@@ -113,6 +173,7 @@
 			projectRoot = "";
 			targets = (
 				352226B91D851CB700BE91E5 /* Mozio */,
+				355A1DA11D85251A00A2DB27 /* MozioTests */,
 			);
 		};
 /* End PBXProject section */
@@ -122,9 +183,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				352226C81D851CB700BE91E5 /* LaunchScreen.storyboard in Resources */,
-				352226C51D851CB700BE91E5 /* Assets.xcassets in Resources */,
-				352226C31D851CB700BE91E5 /* Main.storyboard in Resources */,
+				35E14B881D8523DB0052CCA1 /* Assets.xcassets in Resources */,
+				35E14B8A1D8523DB0052CCA1 /* Main.storyboard in Resources */,
+				35E14B891D8523DB0052CCA1 /* LaunchScreen.storyboard in Resources */,
+				35E14B8B1D8523DB0052CCA1 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		355A1DA01D85251A00A2DB27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,28 +204,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				352226C01D851CB700BE91E5 /* ViewController.swift in Sources */,
 				352226BE1D851CB700BE91E5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		355A1D9E1D85251A00A2DB27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				355A1DA51D85251A00A2DB27 /* MozioTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		352226C11D851CB700BE91E5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				352226C21D851CB700BE91E5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		355A1DA81D85251A00A2DB27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 352226B91D851CB700BE91E5 /* Mozio */;
+			targetProxy = 355A1DA71D85251A00A2DB27 /* PBXContainerItemProxy */;
 		};
-		352226C61D851CB700BE91E5 /* LaunchScreen.storyboard */ = {
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		35E14B831D8523DB0052CCA1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				352226C71D851CB700BE91E5 /* Base */,
+				35E14B841D8523DB0052CCA1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		35E14B851D8523DB0052CCA1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35E14B861D8523DB0052CCA1 /* Base */,
+			);
+			name = Main.storyboard;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -251,7 +336,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Mozio/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Mozio/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rahulkatariya.Mozio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -262,10 +347,34 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Mozio/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Mozio/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rahulkatariya.Mozio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		355A1DA91D85251A00A2DB27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MozioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahulkatariya.MozioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mozio.app/Mozio";
+			};
+			name = Debug;
+		};
+		355A1DAA1D85251A00A2DB27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MozioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahulkatariya.MozioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mozio.app/Mozio";
 			};
 			name = Release;
 		};
@@ -288,6 +397,16 @@
 				352226CE1D851CB700BE91E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		355A1DAB1D85251A00A2DB27 /* Build configuration list for PBXNativeTarget "MozioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				355A1DA91D85251A00A2DB27 /* Debug */,
+				355A1DAA1D85251A00A2DB27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

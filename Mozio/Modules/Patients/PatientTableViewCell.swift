@@ -17,8 +17,9 @@ class PatientTableViewCell: UITableViewCell {
                 nameLabel.text = "\(p.name)"
                 ageLabel.text = "\(p.age) yrs"
                 genderLabel.text = "\(p.genderRaw)"
-                let tsp = ToddSyndromeProbabilty.checkPatient(p)
-                toddSyndromePercentageLabel.text = "\(tsp.calculatePercentage())% chances"
+                let tsp = ToddSyndromeProbabilty.checkPatient(p).calculatePercentage()
+                toddSyndromePercentageLabel.text = "\(tsp)% chances"
+                backgroundColor = UIColor.redColor().colorWithAlphaComponent(CGFloat(tsp)/100)
             }
         }
     }

@@ -38,8 +38,8 @@ class AddPatientTableViewController: UITableViewController {
         patient.hasMigranes = hasMigraneSwitch.on
         patient.useDrugs = useDrugsSwitch.on
         
-        /// Save onto the server
-        PatientPOSTService(params: patient.toJSON().dictionaryObject).executeTask { [weak self] response in
+        /// Save `Patient` object on the server
+        PatientPOSTService(params: patient.toJSON().dictionaryObject).executeTaskEventually { [weak self] response in
             guard let _ = response.result.value else {
                 if let _weakSelf = self {
                     AlertUtils().showAlertWithMessage(response.result.error!.localizedDescription, onViewController: _weakSelf)

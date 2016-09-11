@@ -41,31 +41,56 @@ class MozioTests: XCTestCase {
     }
     
     func testToddSyndromeProbabiltyUnlikely() {
-        patient = Patient(age: 25, name: "Lisa", gender: .Female, hasMigranes: false, useDrugs: false)
+        patient = Patient()
+        patient.age = 25
+        patient.name = "Lisa"
+        patient.genderRaw = Patient.Gender.Female.rawValue
+        patient.hasMigranes = false
+        patient.useDrugs = false
         let probabilty = ToddSyndromeProbabilty.checkPatient(patient)
         XCTAssert(probabilty == .Unlikely)
     }
     
     func testToddSyndromeProbabiltyLow() {
-        patient = Patient(age: 25, name: "Rahul", gender: .Male, hasMigranes: false, useDrugs: false)
+        patient = Patient()
+        patient.age = 25
+        patient.name = "Rahul"
+        patient.genderRaw = Patient.Gender.Male.rawValue
+        patient.hasMigranes = false
+        patient.useDrugs = false
         let probabilty = ToddSyndromeProbabilty.checkPatient(patient)
         XCTAssert(probabilty == .Low)
     }
     
     func testToddSyndromeProbabiltyNormal() {
-        patient = Patient(age: 15, name: "Rahul", gender: .Male, hasMigranes: false, useDrugs: false)
+        patient = Patient()
+        patient.age = 15
+        patient.name = "Rahul"
+        patient.genderRaw = Patient.Gender.Male.rawValue
+        patient.hasMigranes = false
+        patient.useDrugs = false
         let probabilty = ToddSyndromeProbabilty.checkPatient(patient)
         XCTAssert(probabilty == .Normal)
     }
     
     func testToddSyndromeProbabiltyHigh() {
-        patient = Patient(age: 14, name: "Rahul", gender: .Male, hasMigranes: true, useDrugs: false)
+        patient = Patient()
+        patient.age = 14
+        patient.name = "Rahul"
+        patient.genderRaw = Patient.Gender.Male.rawValue
+        patient.hasMigranes = true
+        patient.useDrugs = false
         let probabilty = ToddSyndromeProbabilty.checkPatient(patient)
         XCTAssert(probabilty == .High)
     }
     
     func testToddSyndromeProbabiltyLikely() {
-        patient = Patient(age: 13, name: "Rahul", gender: .Male, hasMigranes: true, useDrugs: true)
+        patient = Patient()
+        patient.age = 13
+        patient.name = "Rahul"
+        patient.genderRaw = Patient.Gender.Male.rawValue
+        patient.hasMigranes = true
+        patient.useDrugs = true
         let probabilty = ToddSyndromeProbabilty.checkPatient(patient)
         XCTAssert(probabilty == .Likely)
         

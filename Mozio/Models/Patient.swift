@@ -15,6 +15,7 @@ class Patient: Object {
     dynamic var age: Int = 0
     dynamic var name: String = ""
     dynamic var genderRaw = "Male"
+    // Issue - https://github.com/realm/realm-cocoa/issues/921
     var gender: Gender? {
         return Gender(rawValue: genderRaw)!
     }

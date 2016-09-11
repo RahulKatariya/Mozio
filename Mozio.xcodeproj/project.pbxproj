@@ -13,6 +13,7 @@
 		35119A5F1D85596A00C10108 /* PatientService+POST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35119A5E1D85596A00C10108 /* PatientService+POST.swift */; };
 		35119A611D85599900C10108 /* PatientService+GET.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35119A601D85599900C10108 /* PatientService+GET.swift */; };
 		35119A641D8569E400C10108 /* AlertUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35119A631D8569E400C10108 /* AlertUtils.swift */; };
+		35119A661D857D3100C10108 /* PatientDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35119A651D857D3100C10108 /* PatientDetailViewController.swift */; };
 		352226BE1D851CB700BE91E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352226BD1D851CB700BE91E5 /* AppDelegate.swift */; };
 		355A1DA51D85251A00A2DB27 /* MozioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355A1DA41D85251A00A2DB27 /* MozioTests.swift */; };
 		358215E91D854336001B49AA /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358215E71D854336001B49AA /* Patient.swift */; };
@@ -41,6 +42,7 @@
 		35119A5E1D85596A00C10108 /* PatientService+POST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PatientService+POST.swift"; sourceTree = "<group>"; };
 		35119A601D85599900C10108 /* PatientService+GET.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PatientService+GET.swift"; sourceTree = "<group>"; };
 		35119A631D8569E400C10108 /* AlertUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtils.swift; sourceTree = "<group>"; };
+		35119A651D857D3100C10108 /* PatientDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientDetailViewController.swift; sourceTree = "<group>"; };
 		352226BA1D851CB700BE91E5 /* Mozio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mozio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		352226BD1D851CB700BE91E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		355A1DA21D85251A00A2DB27 /* MozioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MozioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +168,7 @@
 				358215FD1D854DB1001B49AA /* PatientsTableViewController.swift */,
 				358215FF1D854E18001B49AA /* PatientTableViewCell.swift */,
 				35119A5C1D8556FC00C10108 /* AddPatientTableViewController.swift */,
+				35119A651D857D3100C10108 /* PatientDetailViewController.swift */,
 			);
 			path = Patients;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				35119A641D8569E400C10108 /* AlertUtils.swift in Sources */,
 				358215FA1D854C70001B49AA /* PatientsService+GET.swift in Sources */,
 				352226BE1D851CB700BE91E5 /* AppDelegate.swift in Sources */,
+				35119A661D857D3100C10108 /* PatientDetailViewController.swift in Sources */,
 				358215E91D854336001B49AA /* Patient.swift in Sources */,
 				35119A5F1D85596A00C10108 /* PatientService+POST.swift in Sources */,
 				35119A5D1D8556FC00C10108 /* AddPatientTableViewController.swift in Sources */,

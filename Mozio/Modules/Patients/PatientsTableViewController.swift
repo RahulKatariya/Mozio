@@ -18,7 +18,6 @@ class PatientsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.allowsSelection = false
         tableView.tableFooterView = UIView()
         
         results = realm.objects(Patient)
@@ -38,6 +37,19 @@ class PatientsTableViewController: UITableViewController {
     
     deinit {
         notificationToken = nil
+    }
+    
+}
+
+// MARK: - Navigation
+extension PatientsTableViewController {
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ShowPatientDetail" {
+            let selectedIndexPath = tableView.indexPathForSelectedRow
+            let dvc = segue.destinationViewController as! PatientDetailViewController
+            dvc.patient = results[selectedIndexPath!.row]
+        }
     }
     
 }

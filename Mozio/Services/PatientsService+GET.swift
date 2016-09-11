@@ -28,13 +28,7 @@ extension PatientsGETService {
         let jsonPatient = JSON(model)
         if let results = jsonPatient["results"].array {
             for result in results {
-                let patient = Patient()
-                patient.objectId = result["objectId"].stringValue
-                patient.name = result["name"].stringValue
-                patient.age = result["age"].numberValue.integerValue
-                patient.hasMigranes = result["hasMigranes"].boolValue
-                patient.useDrugs = result["useDrugs"].boolValue
-                patient.genderRaw = result["gender"].stringValue
+                let patient = Patient.fromJSON(result)
                 try! realm.write {
                     realm.add(patient, update: true)
                 }

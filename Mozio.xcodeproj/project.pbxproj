@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		0B979D0E64B0833AF9F61F32 /* Pods_MozioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 026580EFA2AF11F9FC2358F2 /* Pods_MozioTests.framework */; };
 		18066E3DBACBB46E92B8103A /* Pods_Mozio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B572CD470E7FA515A607CC /* Pods_Mozio.framework */; };
+		35119A5D1D8556FC00C10108 /* AddPatientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35119A5C1D8556FC00C10108 /* AddPatientTableViewController.swift */; };
+		35119A5F1D85596A00C10108 /* PatientService+POST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35119A5E1D85596A00C10108 /* PatientService+POST.swift */; };
+		35119A611D85599900C10108 /* PatientService+GET.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35119A601D85599900C10108 /* PatientService+GET.swift */; };
+		35119A641D8569E400C10108 /* AlertUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35119A631D8569E400C10108 /* AlertUtils.swift */; };
 		352226BE1D851CB700BE91E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352226BD1D851CB700BE91E5 /* AppDelegate.swift */; };
 		355A1DA51D85251A00A2DB27 /* MozioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355A1DA41D85251A00A2DB27 /* MozioTests.swift */; };
 		358215E91D854336001B49AA /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358215E71D854336001B49AA /* Patient.swift */; };
@@ -33,6 +37,10 @@
 
 /* Begin PBXFileReference section */
 		026580EFA2AF11F9FC2358F2 /* Pods_MozioTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MozioTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35119A5C1D8556FC00C10108 /* AddPatientTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPatientTableViewController.swift; sourceTree = "<group>"; };
+		35119A5E1D85596A00C10108 /* PatientService+POST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PatientService+POST.swift"; sourceTree = "<group>"; };
+		35119A601D85599900C10108 /* PatientService+GET.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PatientService+GET.swift"; sourceTree = "<group>"; };
+		35119A631D8569E400C10108 /* AlertUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtils.swift; sourceTree = "<group>"; };
 		352226BA1D851CB700BE91E5 /* Mozio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mozio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		352226BD1D851CB700BE91E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		355A1DA21D85251A00A2DB27 /* MozioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MozioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35119A621D8569D300C10108 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				35119A631D8569E400C10108 /* AlertUtils.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		352226B11D851CB700BE91E5 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +118,7 @@
 				358215FB1D854DB1001B49AA /* Modules */,
 				358215E61D854336001B49AA /* Models */,
 				358215F81D854C70001B49AA /* Services */,
+				35119A621D8569D300C10108 /* Helpers */,
 				35E14B811D8523DB0052CCA1 /* Supporting Files */,
 			);
 			path = Mozio;
@@ -128,6 +145,8 @@
 		358215F81D854C70001B49AA /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				35119A601D85599900C10108 /* PatientService+GET.swift */,
+				35119A5E1D85596A00C10108 /* PatientService+POST.swift */,
 				358215F91D854C70001B49AA /* PatientsService+GET.swift */,
 			);
 			path = Services;
@@ -146,6 +165,7 @@
 			children = (
 				358215FD1D854DB1001B49AA /* PatientsTableViewController.swift */,
 				358215FF1D854E18001B49AA /* PatientTableViewCell.swift */,
+				35119A5C1D8556FC00C10108 /* AddPatientTableViewController.swift */,
 			);
 			path = Patients;
 			sourceTree = "<group>";
@@ -380,11 +400,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35119A641D8569E400C10108 /* AlertUtils.swift in Sources */,
 				358215FA1D854C70001B49AA /* PatientsService+GET.swift in Sources */,
 				352226BE1D851CB700BE91E5 /* AppDelegate.swift in Sources */,
 				358215E91D854336001B49AA /* Patient.swift in Sources */,
+				35119A5F1D85596A00C10108 /* PatientService+POST.swift in Sources */,
+				35119A5D1D8556FC00C10108 /* AddPatientTableViewController.swift in Sources */,
 				358216001D854E18001B49AA /* PatientTableViewCell.swift in Sources */,
 				358215FE1D854DB1001B49AA /* PatientsTableViewController.swift in Sources */,
+				35119A611D85599900C10108 /* PatientService+GET.swift in Sources */,
 				358215EA1D854336001B49AA /* ToddSyndromeProbabilty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,3 +1,28 @@
-PODFILE CHECKSUM: 1057ab72f7f7f468009a3274457d6eeab34e7116
+PODS:
+  - Alamofire (3.5.0)
+  - Realm (1.0.2):
+    - Realm/Headers (= 1.0.2)
+  - Realm/Headers (1.0.2)
+  - RealmSwift (1.0.2):
+    - Realm (= 1.0.2)
+  - Restofire (1.1.0):
+    - Restofire/Core (= 1.1.0)
+  - Restofire/Core (1.1.0):
+    - Alamofire (~> 3.0)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - RealmSwift
+  - Restofire
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: b70a7352335f8ea5babd0a923eb7e8eacc67b877
+  Realm: 9d5c46a4d7d27958530a8dfc58f63a99e5c2cba3
+  RealmSwift: 82f3ac5e24530143dddfde2033acc0d308f27d96
+  Restofire: d5b61a83a943273347bd77175d50d276236ca399
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+PODFILE CHECKSUM: 2caa1da17c5c8d7a41ad2bc0bfa12c4f45ee21d9
 
 COCOAPODS: 1.0.1

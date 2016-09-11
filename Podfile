@@ -6,6 +6,9 @@ target 'Mozio' do
   use_frameworks!
 
   # Pods for Mozio
+  pod 'Restofire'
+  pod 'SwiftyJSON'
+  pod 'RealmSwift'
 
   target 'MozioTests' do
     inherit! :search_paths

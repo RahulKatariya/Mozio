@@ -13,10 +13,12 @@
 		355A1DA51D85251A00A2DB27 /* MozioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355A1DA41D85251A00A2DB27 /* MozioTests.swift */; };
 		358215E91D854336001B49AA /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358215E71D854336001B49AA /* Patient.swift */; };
 		358215EA1D854336001B49AA /* ToddSyndromeProbabilty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358215E81D854336001B49AA /* ToddSyndromeProbabilty.swift */; };
+		358215FA1D854C70001B49AA /* PatientsService+GET.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358215F91D854C70001B49AA /* PatientsService+GET.swift */; };
+		358215FE1D854DB1001B49AA /* PatientsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358215FD1D854DB1001B49AA /* PatientsTableViewController.swift */; };
+		358216001D854E18001B49AA /* PatientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358215FF1D854E18001B49AA /* PatientTableViewCell.swift */; };
 		35E14B881D8523DB0052CCA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35E14B821D8523DB0052CCA1 /* Assets.xcassets */; };
 		35E14B891D8523DB0052CCA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35E14B831D8523DB0052CCA1 /* LaunchScreen.storyboard */; };
 		35E14B8A1D8523DB0052CCA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35E14B851D8523DB0052CCA1 /* Main.storyboard */; };
-		35E14B8B1D8523DB0052CCA1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35E14B871D8523DB0052CCA1 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,9 @@
 		355A1DA61D85251A00A2DB27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		358215E71D854336001B49AA /* Patient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		358215E81D854336001B49AA /* ToddSyndromeProbabilty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToddSyndromeProbabilty.swift; sourceTree = "<group>"; };
+		358215F91D854C70001B49AA /* PatientsService+GET.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PatientsService+GET.swift"; sourceTree = "<group>"; };
+		358215FD1D854DB1001B49AA /* PatientsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientsTableViewController.swift; sourceTree = "<group>"; };
+		358215FF1D854E18001B49AA /* PatientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientTableViewCell.swift; sourceTree = "<group>"; };
 		35E14B821D8523DB0052CCA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35E14B841D8523DB0052CCA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35E14B861D8523DB0052CCA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -93,8 +98,10 @@
 			isa = PBXGroup;
 			children = (
 				352226BD1D851CB700BE91E5 /* AppDelegate.swift */,
-				358215E61D854336001B49AA /* Models */,
 				35E14B851D8523DB0052CCA1 /* Main.storyboard */,
+				358215FB1D854DB1001B49AA /* Modules */,
+				358215E61D854336001B49AA /* Models */,
+				358215F81D854C70001B49AA /* Services */,
 				35E14B811D8523DB0052CCA1 /* Supporting Files */,
 			);
 			path = Mozio;
@@ -116,6 +123,31 @@
 				358215E81D854336001B49AA /* ToddSyndromeProbabilty.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		358215F81D854C70001B49AA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				358215F91D854C70001B49AA /* PatientsService+GET.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		358215FB1D854DB1001B49AA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				358215FC1D854DB1001B49AA /* Patients */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		358215FC1D854DB1001B49AA /* Patients */ = {
+			isa = PBXGroup;
+			children = (
+				358215FD1D854DB1001B49AA /* PatientsTableViewController.swift */,
+				358215FF1D854E18001B49AA /* PatientTableViewCell.swift */,
+			);
+			path = Patients;
 			sourceTree = "<group>";
 		};
 		35E14B811D8523DB0052CCA1 /* Supporting Files */ = {
@@ -238,7 +270,6 @@
 				35E14B881D8523DB0052CCA1 /* Assets.xcassets in Resources */,
 				35E14B8A1D8523DB0052CCA1 /* Main.storyboard in Resources */,
 				35E14B891D8523DB0052CCA1 /* LaunchScreen.storyboard in Resources */,
-				35E14B8B1D8523DB0052CCA1 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,8 +380,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				358215FA1D854C70001B49AA /* PatientsService+GET.swift in Sources */,
 				352226BE1D851CB700BE91E5 /* AppDelegate.swift in Sources */,
 				358215E91D854336001B49AA /* Patient.swift in Sources */,
+				358216001D854E18001B49AA /* PatientTableViewCell.swift in Sources */,
+				358215FE1D854DB1001B49AA /* PatientsTableViewController.swift in Sources */,
 				358215EA1D854336001B49AA /* ToddSyndromeProbabilty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

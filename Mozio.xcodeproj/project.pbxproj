@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B979D0E64B0833AF9F61F32 /* Pods_MozioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 026580EFA2AF11F9FC2358F2 /* Pods_MozioTests.framework */; };
+		18066E3DBACBB46E92B8103A /* Pods_Mozio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B572CD470E7FA515A607CC /* Pods_Mozio.framework */; };
 		352226BE1D851CB700BE91E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352226BD1D851CB700BE91E5 /* AppDelegate.swift */; };
 		355A1DA51D85251A00A2DB27 /* MozioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355A1DA41D85251A00A2DB27 /* MozioTests.swift */; };
 		358215E91D854336001B49AA /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358215E71D854336001B49AA /* Patient.swift */; };
@@ -28,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		026580EFA2AF11F9FC2358F2 /* Pods_MozioTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MozioTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		352226BA1D851CB700BE91E5 /* Mozio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mozio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		352226BD1D851CB700BE91E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		355A1DA21D85251A00A2DB27 /* MozioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MozioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +42,11 @@
 		35E14B841D8523DB0052CCA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35E14B861D8523DB0052CCA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35E14B871D8523DB0052CCA1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A2E7B0AA848AB1AAFAE0D9D /* Pods-MozioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MozioTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MozioTests/Pods-MozioTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A6C91634867A0261A513939E /* Pods-Mozio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mozio.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mozio/Pods-Mozio.release.xcconfig"; sourceTree = "<group>"; };
+		C6864296E9747BBC1D880A82 /* Pods-Mozio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mozio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mozio/Pods-Mozio.debug.xcconfig"; sourceTree = "<group>"; };
+		C6B572CD470E7FA515A607CC /* Pods_Mozio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mozio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF6649EEACC49106B2912D7E /* Pods-MozioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MozioTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MozioTests/Pods-MozioTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18066E3DBACBB46E92B8103A /* Pods_Mozio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B979D0E64B0833AF9F61F32 /* Pods_MozioTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +75,8 @@
 				352226BC1D851CB700BE91E5 /* Mozio */,
 				355A1DA31D85251A00A2DB27 /* MozioTests */,
 				352226BB1D851CB700BE91E5 /* Products */,
+				E42531F98B83260B13A8C355 /* Pods */,
+				7829FE1D40DB79351B4B9AC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +128,26 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7829FE1D40DB79351B4B9AC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6B572CD470E7FA515A607CC /* Pods_Mozio.framework */,
+				026580EFA2AF11F9FC2358F2 /* Pods_MozioTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E42531F98B83260B13A8C355 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6864296E9747BBC1D880A82 /* Pods-Mozio.debug.xcconfig */,
+				A6C91634867A0261A513939E /* Pods-Mozio.release.xcconfig */,
+				5A2E7B0AA848AB1AAFAE0D9D /* Pods-MozioTests.debug.xcconfig */,
+				DF6649EEACC49106B2912D7E /* Pods-MozioTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 352226CC1D851CB700BE91E5 /* Build configuration list for PBXNativeTarget "Mozio" */;
 			buildPhases = (
+				36F295C4F8EBC1EFA6D04DC9 /* [CP] Check Pods Manifest.lock */,
 				352226B61D851CB700BE91E5 /* Sources */,
 				352226B71D851CB700BE91E5 /* Frameworks */,
 				352226B81D851CB700BE91E5 /* Resources */,
+				18E5A66AF55CAF09E6C5FE00 /* [CP] Embed Pods Frameworks */,
+				5162CBDB08A1DA6B07C568C9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 355A1DAB1D85251A00A2DB27 /* Build configuration list for PBXNativeTarget "MozioTests" */;
 			buildPhases = (
+				4B7C6BA0003000E131EA7380 /* [CP] Check Pods Manifest.lock */,
 				355A1D9E1D85251A00A2DB27 /* Sources */,
 				355A1D9F1D85251A00A2DB27 /* Frameworks */,
 				355A1DA01D85251A00A2DB27 /* Resources */,
+				B94AD8F048CC5C8EE2A0F32F /* [CP] Embed Pods Frameworks */,
+				96427C000B764C2B1D31DF92 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,6 +250,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18E5A66AF55CAF09E6C5FE00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mozio/Pods-Mozio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36F295C4F8EBC1EFA6D04DC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4B7C6BA0003000E131EA7380 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5162CBDB08A1DA6B07C568C9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mozio/Pods-Mozio-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96427C000B764C2B1D31DF92 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MozioTests/Pods-MozioTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B94AD8F048CC5C8EE2A0F32F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MozioTests/Pods-MozioTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		352226B61D851CB700BE91E5 /* Sources */ = {
@@ -350,6 +481,7 @@
 		};
 		352226CD1D851CB700BE91E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6864296E9747BBC1D880A82 /* Pods-Mozio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/Mozio/Supporting Files/Info.plist";
@@ -361,6 +493,7 @@
 		};
 		352226CE1D851CB700BE91E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6C91634867A0261A513939E /* Pods-Mozio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/Mozio/Supporting Files/Info.plist";
@@ -372,6 +505,7 @@
 		};
 		355A1DA91D85251A00A2DB27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A2E7B0AA848AB1AAFAE0D9D /* Pods-MozioTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MozioTests/Info.plist;
@@ -384,6 +518,7 @@
 		};
 		355A1DAA1D85251A00A2DB27 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF6649EEACC49106B2912D7E /* Pods-MozioTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MozioTests/Info.plist;

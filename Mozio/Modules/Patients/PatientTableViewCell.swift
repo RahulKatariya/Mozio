@@ -13,9 +13,9 @@ class PatientTableViewCell: UITableViewCell {
     var patient: Patient! {
         didSet {
             if let p = patient {
-                nameLabel.text = p.name
+                nameLabel.text = "\(p.name), \(p.age) years \(p.genderRaw) \nDrugs - \(p.useDrugs.description)  \nMigraines - \(p.hasMigranes.description)"
                 let tsp = ToddSyndromeProbabilty.checkPatient(p)
-                toddSyndromePercentageLabel.text = "\(tsp.calculatePercentage())%"
+                toddSyndromePercentageLabel.text = "\(tsp.calculatePercentage())% chances of having Todd's Syndrome"
             }
         }
     }

@@ -18,6 +18,8 @@ class PatientsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.allowsSelection = false
+        
         results = realm.objects(Patient)
         
         notificationToken = results.addNotificationBlock { [weak self] (changes: RealmCollectionChange) in

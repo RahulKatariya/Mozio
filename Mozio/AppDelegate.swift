@@ -23,6 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Restofire.defaultConfiguration.headers = ["X-Parse-Application-Id":"NmuqsrwKlme72R8UI0fnQP4sFrRSAoEJI0klQf5x",
                                                   "X-Parse-REST-API-Key":"R8O8z6VpLgb2XRi3vA8wgBaUs3nXGWCbJyp1yZ3w"]
         
+        /**
+         Load All Patients from Server into Realm Database
+         */
         PatientsGETService().executeTaskEventually()
         
         return true

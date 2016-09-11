@@ -145,9 +145,9 @@
 		358215F81D854C70001B49AA /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				358215F91D854C70001B49AA /* PatientsService+GET.swift */,
 				35119A601D85599900C10108 /* PatientService+GET.swift */,
 				35119A5E1D85596A00C10108 /* PatientService+POST.swift */,
-				358215F91D854C70001B49AA /* PatientsService+GET.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";

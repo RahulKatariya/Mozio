@@ -35,6 +35,16 @@ class PatientsTableViewController: UITableViewController {
         
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        navigationController?.delegate = self
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        navigationController?.delegate = nil
+    }
+    
     deinit {
         notificationToken = nil
     }
@@ -50,6 +60,15 @@ extension PatientsTableViewController {
             let dvc = segue.destinationViewController as! PatientDetailViewController
             dvc.patient = results[selectedIndexPath!.row]
         }
+    }
+    
+}
+
+// MARK: - Animation
+extension PatientsTableViewController: UINavigationControllerDelegate {
+   
+    func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return PatientToDetailAnimator()
     }
     
 }

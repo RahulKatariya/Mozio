@@ -16,6 +16,7 @@
 		35119A661D857D3100C10108 /* PatientDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35119A651D857D3100C10108 /* PatientDetailViewController.swift */; };
 		352226BE1D851CB700BE91E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352226BD1D851CB700BE91E5 /* AppDelegate.swift */; };
 		355A1DA51D85251A00A2DB27 /* MozioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355A1DA41D85251A00A2DB27 /* MozioTests.swift */; };
+		357DCB451D85839C0072EBA9 /* PatientToDetailAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357DCB441D85839C0072EBA9 /* PatientToDetailAnimator.swift */; };
 		358215E91D854336001B49AA /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358215E71D854336001B49AA /* Patient.swift */; };
 		358215EA1D854336001B49AA /* ToddSyndromeProbabilty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358215E81D854336001B49AA /* ToddSyndromeProbabilty.swift */; };
 		358215FA1D854C70001B49AA /* PatientsService+GET.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358215F91D854C70001B49AA /* PatientsService+GET.swift */; };
@@ -48,6 +49,7 @@
 		355A1DA21D85251A00A2DB27 /* MozioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MozioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		355A1DA41D85251A00A2DB27 /* MozioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MozioTests.swift; sourceTree = "<group>"; };
 		355A1DA61D85251A00A2DB27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		357DCB441D85839C0072EBA9 /* PatientToDetailAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientToDetailAnimator.swift; sourceTree = "<group>"; };
 		358215E71D854336001B49AA /* Patient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		358215E81D854336001B49AA /* ToddSyndromeProbabilty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToddSyndromeProbabilty.swift; sourceTree = "<group>"; };
 		358215F91D854C70001B49AA /* PatientsService+GET.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PatientsService+GET.swift"; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				358215FF1D854E18001B49AA /* PatientTableViewCell.swift */,
 				35119A5C1D8556FC00C10108 /* AddPatientTableViewController.swift */,
 				35119A651D857D3100C10108 /* PatientDetailViewController.swift */,
+				357DCB441D85839C0072EBA9 /* PatientToDetailAnimator.swift */,
 			);
 			path = Patients;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				358216001D854E18001B49AA /* PatientTableViewCell.swift in Sources */,
 				358215FE1D854DB1001B49AA /* PatientsTableViewController.swift in Sources */,
 				35119A611D85599900C10108 /* PatientService+GET.swift in Sources */,
+				357DCB451D85839C0072EBA9 /* PatientToDetailAnimator.swift in Sources */,
 				358215EA1D854336001B49AA /* ToddSyndromeProbabilty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,14 +14,19 @@ class PatientTableViewCell: UITableViewCell {
         didSet {
             /// Update UI
             if let p = patient {
-                nameLabel.text = "\(p.name), \(p.age) years \(p.genderRaw) \nDrugs - \(p.useDrugs.description)  \nMigraines - \(p.hasMigranes.description)"
+                nameLabel.text = "\(p.name)"
+                ageLabel.text = "\(p.age) yrs"
+                genderLabel.text = "\(p.genderRaw)"
                 let tsp = ToddSyndromeProbabilty.checkPatient(p)
-                toddSyndromePercentageLabel.text = "\(tsp.calculatePercentage())% chances of having Todd's Syndrome"
+                toddSyndromePercentageLabel.text = "\(tsp.calculatePercentage())% chances"
             }
         }
     }
     
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var genderLabel: UILabel!
+    
     @IBOutlet weak var toddSyndromePercentageLabel: UILabel!
     
 }

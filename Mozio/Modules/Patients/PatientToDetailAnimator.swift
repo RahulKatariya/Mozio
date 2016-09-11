@@ -11,26 +11,23 @@ import UIKit
 class PatientToDetailAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
-        return 0.35
+        return 0.5
     }
     
-    func animateTransition(
-        transitionContext: UIViewControllerContextTransitioning) {
+    func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
         let containerView = transitionContext.containerView()
-        let _ = transitionContext.viewControllerForKey(
-            UITransitionContextFromViewControllerKey)
-        let toVC = transitionContext.viewControllerForKey(
-            UITransitionContextToViewControllerKey)
+        let fromVC = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey) as! PatientsTableViewController
+        let toVC = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey) as! PatientDetailViewController
         
-        containerView!.addSubview(toVC!.view)
-        toVC!.view.alpha = 0.0
+        containerView!.addSubview(toVC.view)
+        toVC.view.alpha = 0.0
         
         let duration = transitionDuration(transitionContext)
         UIView.animateWithDuration(duration, animations: {
-            toVC!.view.alpha = 1.0
+            toVC.view.alpha = 1.0
             }, completion: { finished in
-                let cancelled = transitionContext.transitionWasCancelled()
-                transitionContext.completeTransition(!cancelled)
+                fromVC.view.removeFromSuperview()
+                transitionContext.completeTransition(finished)
         })
     }
     

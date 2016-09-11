@@ -16,6 +16,13 @@ class AddPatientTableViewController: UITableViewController {
     @IBOutlet weak var useDrugsSwitch: UISwitch!
     @IBOutlet weak var hasMigraneSwitch: UISwitch!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        tableView.allowsSelection = false
+        tableView.tableFooterView = UIView()
+    }
+    
     @IBAction func closeBarButtonItemTapped(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }

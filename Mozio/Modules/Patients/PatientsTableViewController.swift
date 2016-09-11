@@ -19,6 +19,7 @@ class PatientsTableViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.allowsSelection = false
+        tableView.tableFooterView = UIView()
         
         results = realm.objects(Patient)
         
